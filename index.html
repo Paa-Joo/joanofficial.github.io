@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABENA JOANA DAMANKA YAYRA BLESSING</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <header>
+        <h1><strong>HAPPY VALENTINES DAY</strong></h1>
+    </header>
+  
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#about">About Her</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#interactive">Interactive Elements</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#quotes">Quotes </a></li>
+            <li><a href="#gift">Gift</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Good day everyone,
+
+                I am honored to introduce to you my girlfriend, YAYRA JOANA ABENA DAMANKA BLESSING. We have been together for 8 months now and I can confidently say that she is the love of my life. From the moment I met her, I knew she was special and every day since then has only reinforced that belief.
+                
+                She is kind, caring, and always puts others before herself. She has a great sense of humor and can always make me laugh, even on the toughest days. She is also incredibly intelligent and driven, always pushing herself to be the best she can be.
+                
+                In addition to being an amazing partner, JOAN is also an incredible friend. She is always there for me, whether I need someone to talk to or just someone to laugh with. She truly makes my life better just by being in it.
+                
+                I am so lucky to have JOAN in my life, and I cannot wait to spend many more Valentine Days with her. Please join me in welcoming her to this special platform.
+                
+                Happy Valentine's Day, everyone!</p>
+
+            <p>My girlfriend is an amazing person, with many talents and interests. I created this website as a tribute to her and to show her how much I love her. I hope she loves it.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Her</h2>
+            <p>Joana Damanka Abena Yayra Blessing is the epitome of balance. She is a hardworking individual when she needs to be, but she also knows the importance of taking a step back and relaxing.
+                
+                She is someone who enjoys the simple things in life, like lounging around and sleeping in. Her ability to switch between being productive and taking it easy is something to be admired.
+                
+                She is also a lover of sleep and can often be found snuggled up in bed, taking a well-deserved nap. Her easy-going nature and her love for relaxation make her a joy to be around, and
+                
+                her hardworking mindset makes her a valuable asset in any situation. Overall, Joana Damanka Abena Yayra Blessing is a unique and wonderful person who knows how to balance her life perfectly.
+                
+                She is kind, caring, and always puts others before herself.</p>
+        </section>
+
+        <section id="photos">
+            <h2>Photos</h2>
+            <img src="C:\Users\dreew\OneDrive\Desktop\JOAN\images\joan.jpg" alt="Girlfriend 1">
+            <img src="C:\Users\dreew\OneDrive\Desktop\JOAN\images\joan1.jpg" alt="Girlfriend 2">
+            <img src="C:\Users\dreew\OneDrive\Desktop\JOAN\images\joan3.jpg" alt="Girlfriend 3">
+            <img src="C:\Users\dreew\OneDrive\Desktop\JOAN\images\joan2.jpg" alt="Girlfriend 4">
+            <img src="C:\Users\dreew\OneDrive\Desktop\JOAN\images\joan4.jpg" alt="Girlfriend 4">
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <video src="C:\Users\dreew\OneDrive\Desktop\JOAN\vids\joan.mp4" controls></video>
+            <video src="C:\Users\dreew\OneDrive\Desktop\JOAN\vids\joan1.mp4" controls></video>
+            <video src="C:\Users\dreew\OneDrive\Desktop\JOAN\vids\joan2.mp4" controls></video>
+            <video src="C:\Users\dreew\OneDrive\Desktop\JOAN\vids\joan3.mp4" controls></video>
+            <video src="C:\Users\dreew\OneDrive\Desktop\JOAN\vids\joan4.mp4" controls></video>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <p>"My girlfriend is the kindest, most caring person I know. She always puts others before herself and goes out of her way to help anyone in need."
+                <p>"I have never met anyone as talented and hardworking as my girlfriend. She is truly an inspiration to me and so many others."</p>
+                <section id="interactive">
+                    <h2>Interactive Elements</h2>
+                    <p>Here you can find a quiz about my girlfriend, a poll for her favorite hobbies, and a form where you can share your own personal message for her.</p>
+                <!--SUBJECT TO DELETE-->
+            <head>
+                <title>Interactive Elements for Girlfriend</title>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                    //Quiz validation 
+                    $(document).ready(function(){
+                    $("#quizForm").submit(function(event){
+                        event.preventDefault();
+                        var answer1 = $("input[name='answer1']").val();
+                        var answer2 = $("input[name='answer2']").val();
+                        var answer3 = $("input[name='answer3']").val();
+                        if(answer1 == "" || answer2 == "" || answer3 == ""){
+                        alert("Please fill in all fields");
+                        } else {
+                        alert("Quiz submitted!");
+                        }
+                    });
+                    });
+
+                    //Poll validation
+                    $(document).ready(function(){
+                    $("#pollForm").submit(function(event){
+                        event.preventDefault();
+                        var hobbies = $("input[name='hobby']:checked").length;
+                        if(hobbies == 0){
+                        alert("Please select at least one hobby");
+                        } else {
+                        alert("Poll submitted!");
+                        }
+                    });
+                    });
+
+                    //Form validation
+                    $(document).ready(function(){
+                    $("#messageForm").submit(function(event){
+                        event.preventDefault();
+                        var name = $("input[name='name']").val();
+                        var message = $("textarea[name='message']").val();
+                        if(name == "" || message == ""){
+                        alert("Please fill in all fields");
+                        } else {
+                        alert("Message submitted!");
+                        }
+                    });
+                    });
+                </script>
+                </head>
+                <div id="quiz">
+                    <h1>Quiz: How well do you know JOAN?</h1>
+                    <form id="quizForm">
+                    <label>What is her favorite color?</label>
+                    <input type="text" name="answer1" required><br>
+                    <label>What is her favorite food?</label>
+                    <input type="text" name="answer2" required><br>
+                    <label>What is her favorite hobby?</label>
+                    <input type="text" name="answer3" required><br>
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div id="poll">
+                    <h1>Poll: What are the favorite hobbies of JOAN?</h1>
+                    <form id="pollForm">
+                    <input type="checkbox" name="hobby" value="reading"> Reading<br>
+                    <input type="checkbox" name="hobby" value="cooking"> Cooking<br>
+                    <input type="checkbox" name="hobby" value="traveling"> Traveling<br>
+                    <input type="checkbox" name="hobby" value="shopping"> Shopping<br>
+                    <input type="checkbox" name="hobby" value="exercise"> Exercise<br>
+                    <input type="checkbox" name="hobby" value="other"> Other: 
+                    <input type="text" name="otherHobby">
+                    <input type="submit" value="Submit">
+                  </form>
+
+                </div>
+                <div id="form">
+                  <h1>Share a personal message for JOAN</h1>
+                  <form id="messageForm">
+                    <label>Your name:</label>
+                    <input type="text" name="name" required>
+                    <label>Your message:</label>
+                    <textarea name="message" required></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>                 
+                <!--SUBJECT TO DELETE-->
+                </section>
+            
+                <section id="timeline">
+                    <h2>Timeline</h2>
+                    <p>This section of the website provides an overview of my girlfriend's life and her achievements. You can find information on her upbringing, education, and career.</p>
+
+                    <p>My girlfriend's upbringing was one filled with love and warmth, despite the tragic loss of her parents at a young age. She was raised in a close-knit family with her two sisters, who have taken care of her ever since.
+                        
+                        Her parents instilled in her strong values and a sense of responsibility from a young age. She grew up with a love for learning and always had a passion for helping others.
+
+                        Her childhood was filled with happy memories, playing with her sisters and spending time with her family. Her parents were her role models and she looked up to them with admiration.
+                        
+                        She was always eager to help out around the house and was known for her kind heart and willingness to lend a hand to anyone in need.
+                        
+                        As she grew older, she excelled in her studies and was a dedicated student. She attended some of the finest schools in the area and graduated with honors. She still plans  on pursuing a higher education, earning a degree in her chosen field.
+                        
+                        She has always been driven and determined to succeed, and she has worked hard to achieve her goals.
+                        
+                        Currently, she has a successful career in her chosen field. She is an accomplished professional, respected by her colleagues and clients alike. She has held several prestigious positions in the past and has a wealth of experience and knowledge to share.
+                        
+                        Her hard work and dedication have paid off, and she is now at the top of her game. She is an inspiration to all of those around her, and I am so proud to be her partner.</p>
+                </section>
+            
+                <section id="music">
+                    <h2>Music</h2>
+                    <p>This section features some of my girlfriend's favorite music. You can listen to the songs and I guarantee you'll love them. She has impeccable tastes.</p>
+                    <ul>
+                      <li>
+                        <h3>Got You Upset</h3>
+                        <p>Artist: Tatiana Manaois</p>
+                        <audio controls>
+                          <source src="C:\Users\dreew\OneDrive\Desktop\JOAN\songs\song.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element. 
+                        </audio>
+                      </li>
+                      <li>
+                        <h3>Perfect</h3>
+                        <p>Artist: Ali Gatie</p>
+                        <audio controls>
+                          <source src="C:\Users\dreew\OneDrive\Desktop\JOAN\songs\song1.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </li>
+                      <li>
+                        <h3>At My Worst</h3>
+                        <p>Artist: Pink Sweat$</p>
+                        <audio controls>
+                          <source src="C:\Users\dreew\OneDrive\Desktop\JOAN\songs\song2.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </li>
+                    </ul>
+                    <p>Want to know more of her favorite songs? <a href="https://music.apple.com/gh/playlist/s-o-u-l-m-a-t-e/pl.u-vxy6kE3tWBrXNAb" target="_blank">Click here</a> </p>
+                  </section>
+                  
+            
+                  <section id="letters">
+                    <h2>A Letter To JOAN</h2>
+                    <p> This section contains a love letter and all the future plans I wish for us and also what she believes in. </p>
+                    <div id="love-letter">
+                      <h3>A Love Letter</h3>
+                      <p>My dearest Joana Abena Damanka Yayra Blessing,<br>
+                        
+                        ❤️ Where do I even begin? My heart is overflowing with love for you, and I cannot express how grateful I am to have you in my life. You are the light in my dark days and the sunshine in my life. I am so lucky to have you as my girlfriend, and I thank God every day for bringing you into my life.<br>
+
+                        💕 You bring so much joy and happiness into my life. Your smile can light up a room, and your laughter is contagious. I love how you can make me smile with just a simple text or phone call. You are the kindest, most compassionate, and beautiful person I have ever met, and I am in awe of the wonderful person you are.<br>
+                        
+                        💖 You are my rock, my support, my everything. I know that I can always count on you to be there for me, no matter what. Your unwavering love and support have been instrumental in helping me grow as a person and become the best version of myself.<br>
+                        
+                        💝 I promise to always love you, cherish you, and support you. I vow to be your best friend, your partner in crime, and your soulmate. I will always stand by your side, through thick and thin, and be there to hold your hand through all of life's ups and downs.<br>
+                        
+                        ❤️ I love you to the moon and back, Joana Abena Damanka Yayra Blessing. You are my everything, and I cannot imagine a life without you. I cannot wait to spend the rest of my life making memories with you and loving you more and more each day.<br>
+                        
+                        Yours forever and always,<br>
+                        
+                        Paa Joo
+                        </p>
+                    </div>
+                    <div id="future-plans">
+                      <h3>Future Plans</h3>
+                      <p>My ❤S🌏O💫U💞L🖤M💍A✨T💐E ❤‍🔥,<br>
+
+                        ❤️💕💖 As I sit down to write this letter, I cannot help but think about all of the amazing things that are yet to come for us. The future is a blank canvas, and I cannot wait to paint it with all of the amazing experiences and memories that we will create together.<br>
+
+                        🌍🌉 I see us traveling the world, experiencing new cultures and cuisines, and making memories that will last a lifetime. I see us building a beautiful home together, filled with love, laughter, and endless joy. I see us starting a family 💑👶🏻 and raising children who will inherit our love for life and each other.<br>
+
+                        💖🎉 I see us supporting each other through our careers and personal goals, encouraging each other to chase our dreams, and celebrating each other's successes along the way. I see us growing old together, surrounded by our loved ones 💞 and holding hands 🤗 as we watch the sunset.<br>
+
+                        💝💞 I vow to always be there for you, to love you and support you through all of life's challenges and triumphs. I promise to be your rock, your safe haven, and your best friend for all eternity.<br>
+
+                        ❤️💕 I cannot wait to start this new chapter of our lives together, my love. You are my everything, and I am so grateful to have you by my side.<br>
+
+                        Yours forever and always,<br>
+
+                        💕❤️
+                      </p>
+                    </div>
+                    <div id="believes">
+                      <h3> What she believes in;</h3>
+                      <p> When I asked, she said she doesn't beleive in anything. She was annoyed with me then so she didn't bother to think it through so... 🚶 </p>
+                    </div>
+                  </section>
+                  
+            
+                  <section id="gift">
+                    <h2>Gift</h2>
+                    <p>In this section, you can find ideas for gifts that you can give to my girlfriend. You can also find a form where you can leave a message for her along with your gift.</p>
+                    <div id="gift-ideas">
+                      <h3>Gift Ideas</h3>
+                      <ul>
+                        <li>A bouquet of her favorite flowers</li>
+                        <li>A personalized piece of jewelry</li>
+                        <li>A romantic getaway</li>
+                        <li>A gourmet cooking class</li>
+                        <li>A luxury spa day</li>
+                        <li>A concert or show tickets of her favorite band or artist</li>
+                        <li>A stylish handbag or wallet</li>
+                        <li>A custom photo book or picture frame</li>
+                        <li>A new smart home device</li>
+                      </ul>                      
+                    </div>
+                    <div id="gift-form">
+                      <h3>Leave a Message</h3>
+                      <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <input type="submit" value="Send">
+                      </form>
+                    </div>
+                  </section>
+                  
+                
+                  <section id="contact">
+                    <h2>Contact</h2>
+                    <p>In this section, you can find ways to contact my girlfriend, such as her email and social media links, as well as a form where you can leave a message for her.</p>
+                  
+                    <!-- Email and social media links -->
+                    <ul>
+                      <li>Email: <a href="mailto:girlfriend@email.com">she doesnt't remember@gmail.com</a></li>
+                      <li>Twitter: <a href="https://twitter.com/girlfriend">@she doesn't have some</a></li>
+                      <li>Instagram: <a href="https://instagram.com/girlfriend">@her phone doesn't support ig</a></li>
+                      <li>Facebook: <a href="https://facebook.com/girlfriend">abenalegacy</a></li>
+                    </ul>
+                  
+                    <!-- Contact form -->
+                    <form action="submit-message.php" method="post">
+                      <label for="name">Your Name:</label>
+                      <input type="text" id="name" name="name" required>
+                  
+                      <label for="email">Your Email:</label>
+                      <input type="email" id="email" name="email" required>
+                  
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  
+                      <button type="submit">Submit</button>
+                    </form>
+                  </section>                  
+            </main>
+            
+            <footer>
+                <p>Copyright © 2023 My Girlfriend's Website</p>
+            </footer>
+            <script src="app.js"></script>
+</body>
+</html>
+

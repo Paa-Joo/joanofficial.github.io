@@ -1,0 +1,793 @@
+header {
+  background-image: url('bg2.jpeg');
+  background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+  font-size: 60px;
+  color: red;
+  text-shadow: 2px 2px #000;
+}
+
+@keyframes title-animation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes background-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+  
+ nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.886);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+  animation: menu-item-animation 2s ease-in-out;
+}
+
+@keyframes menu-item-animation {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #fb0404;
+  cursor: pointer;
+}
+
+  
+h2 {
+  font-size: 24px;
+  color: gold;
+  text-align: center;
+  animation: header-animation 2s ease-in-out;
+  background-color: rgba(255, 204, 153, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(255, 153, 51);
+  }
+  
+  @keyframes header-animation {
+  from {
+  transform: translateY(-100%);
+  }
+  to {
+  transform: translateY(0);
+  }
+  }
+  
+  p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: rgba(255, 255, 153, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(255, 204, 102);
+  animation: content-animation 2s ease-in-out;
+  border: 1px solid rgb(255, 153, 102);
+  }
+  
+  @keyframes content-animation {
+  from {
+  opacity: 0;
+  transform: scale(0.5);
+  }
+  to {
+  opacity: 1;
+  transform: scale(1);
+  }
+  }
+  
+
+  section#about {
+    padding: 20px;
+    background-color: rgb(248, 252, 248);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    animation: header-animation 2s ease-in-out;
+  }
+  
+  @keyframes header-animation {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: rgb(243, 247, 27);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    animation: content-animation 2s ease-in-out;
+  }
+  
+  @keyframes content-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  section#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 192, 210);
+  }
+  
+  section#photos img {
+    width: 30%;
+    height: auto;
+    margin: 1%;
+    animation: photo-animation 2s ease-in-out;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  
+  @keyframes photo-animation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  section#videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 105, 105);
+  }
+  
+  section#videos video {
+    width: 30%;
+    height: auto;
+    margin: 1%;
+    animation: video-animation 2s ease-in-out;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+  }
+  
+  @keyframes video-animation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  #testimonials {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    animation: testimonials-animation 2s ease-in-out;
+  }
+  
+  @keyframes testimonials-animation {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #testimonials p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+  }
+  
+  #interactive {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    animation: interactive-animation 2s ease-in-out;
+  }
+  
+  @keyframes interactive-animation {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #interactive h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #interactive p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+  }
+
+  #quizForm, #pollForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  h1 {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 1rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #00b0f0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #quiz {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  #quiz h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #ccc;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #quiz form {
+    display: inline-block;
+    text-align: left;
+    padding: 30px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #quiz label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #quiz input[type="text"], #quiz textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #poll {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  #poll h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #ccc;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #poll form {
+    display: inline-block;
+    text-align: left;
+    padding: 30px;
+    background-color: #f6ff00;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #poll input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #form {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  #form h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #ccc;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #form form {
+    display: inline-block;
+    text-align: left;
+    padding: 30px;
+    background-color: #30D5C8;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #form input[type="text"], #form textarea {
+    width: 100%;
+    padding: 10px;
+  }
+   
+    section#timeline {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+      
+      section#timeline h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: #000000;
+        animation: slideInLeft 1s ease-in-out;
+      }
+      
+      section#timeline p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+        color: rgb(0, 0, 0);
+        animation: slideInRight 1s ease-in-out;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      @keyframes slideInLeft {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0%); }
+      }
+      
+      @keyframes slideInRight {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0%); }
+      }
+        
+      #music h2 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+        animation: slideIn 0.5s ease-in-out;
+        }
+        
+        #music p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+        animation: slideIn 0.5s ease-in-out;
+        }
+        
+        #music ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        #music li {
+        margin-bottom: 20px;
+        animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        #music h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: rgb(255, 0, 0);
+        animation: slideIn 0.5s ease-in-out;
+        }
+        
+        #music audio {
+        width: 100%;
+        }
+        
+        @keyframes slideIn {
+        from {
+        transform: translateX(-50px);
+        opacity: 0;
+        }
+        to {
+        transform: translateX(0);
+        opacity: 1;
+        }
+        }
+        
+        @keyframes fadeIn {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+        }
+
+        #quotes {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px auto;
+          }
+          
+          #quotes h2 {
+            font-size: 36px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          #quotes p {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            line-height: 1.5;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          #favorite-quotes, #personal-quotes, #believes {
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          #favorite-quotes h3, #personal-quotes h3, #believes h3 {
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          #favorite-quotes ul, #personal-quotes ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          #favorite-quotes li, #personal-quotes li {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          #believes p {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            line-height: 1.5;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in-out;
+          }
+          
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+          #gift {
+            color: rgb(250, 0, 0);
+            padding: 1em;
+            text-align: center;
+          }
+          
+          h2 {
+            margin-bottom: 0.5em;
+            color: rgb(0, 0, 0);
+            font-size: 36px;
+            text-align: center;
+          }
+          
+          #gift-ideas {
+            margin-bottom: 2em;
+          }
+          
+          #gift-ideas h3 {
+            margin-bottom: 1em;
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+          }
+          
+          #gift-ideas ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+          }
+          
+          #gift-form {
+            background-color: #d9b09c;
+            padding: 1em;
+            border-radius: 5px;
+          }
+          
+          #gift-form h3 {
+            margin-bottom: 1em;
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+          }
+          
+          #gift-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          #gift-form label,
+          #gift-form input[type="text"],
+          #gift-form input[type="email"],
+          #gift-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: 1px solid rgb(0, 0, 0);
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+          }
+          
+          #gift-form input[type="submit"] {
+            padding: 0.5em 1em;
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          #gift-form input[type="submit"]:hover {
+            background-color: rgb(255, 0, 0);
+            color: #f2f2f2;
+          }
+
+          #contact {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+            }
+            
+            #contact h2 {
+            font-size: 36px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            }
+            
+            #contact p {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 40px;
+            }
+            
+            #contact ul {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            list-style: none;
+            }
+            
+            #contact li {
+            margin-right: 20px;
+            font-size: 18px;
+            }
+            
+            #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #30D5C8;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgb(204, 204, 204);
+            }
+            
+            #contact form label, #contact form input, #contact form textarea, #contact form button {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+            transition: all 0.3s ease-in-out;
+            }
+            
+            #contact form input[type="text"], #contact form input[type="email"] {
+            background-color: rgb(255, 255, 255);
+            }
+            
+            #contact form textarea {
+            background-color: rgb(255, 255, 255);
+            height: 150px;
+            }
+            
+            #contact form button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            }
+            
+            #contact form button[type="submit"]:hover {
+            background-color: #3e8e41;
+            }
+            
+            #contact form label:focus-within,
+            #contact form input:focus,
+            #contact form textarea:focus {
+            border: 1px solid #4CAF50;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px 0;
+                background-color: rgb(255, 255, 255);
+                color: rgb(17, 10, 231);
+              }
+              
+              footer p {
+                font-size: 14px;
+                margin: 0;
+                animation: fadeIn 0.5s ease-in-out;
+              }
+              
+              @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                  transform: translateY(20px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
+              
+        
+        
+        
+        
+    
+    
+    
+    
